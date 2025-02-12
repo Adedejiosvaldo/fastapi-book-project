@@ -18,6 +18,8 @@ jobs:
           script: |
 
             cd ~/fastapi-book-project
+            git checkout main
             git pull origin main
             docker-compose down
+            docker system prune -af
             docker-compose up -d --build
