@@ -1,5 +1,5 @@
 name: Test
-
+run-name: ${{ github.actor }} is running ci pipeline 🚀
 on:
   pull_request:
     branches: [main]
